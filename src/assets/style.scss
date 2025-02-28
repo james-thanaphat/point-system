@@ -1,0 +1,71 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+$font-primary: 'Lato',Arial, sans-serif;
+$primary: #1089ff;
+
+body{
+	font-family: $font-primary;
+	font-size: 16px;
+	line-height: 1.8;
+	font-weight: normal;
+	background: #f8f9fd;
+	color: lighten($black,50%);
+}
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+	line-height: 1.5;
+	font-weight: 400;
+	font-family: $font-primary;
+	color: $black;
+}
+
+a {
+	transition: .3s all ease;
+	&:hover, &:focus {
+		text-decoration: none !important;
+		outline: none !important;
+		box-shadow: none;
+	}
+}
+
+.bg-primary{
+	background: $primary !important;
+}
+
+.login-section{
+	padding: 7em 0;
+}
+
+.login-wrap{
+	position: relative;
+	background: $white;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 10px 34px -15px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0px 10px 34px -15px rgba(0,0,0,0.24);
+	box-shadow: 0px 10px 34px -15px rgba(0,0,0,0.24);
+	h3{
+		font-weight: 300;
+	}
+	.icon{
+		width: 80px;
+		height: 80px;
+		background: $primary;
+		border-radius: 50%;
+		font-size: 30px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		span{
+			color: $white;
+		}
+	}
+}
+
+.btn {
+	@include border-radius(40px);
+	box-shadow: none!important;
+	font-size: 15px;
+}
+
