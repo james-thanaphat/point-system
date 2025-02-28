@@ -9,3 +9,9 @@ docker-compose up --build
 ```
 npm install
 ```
+
+## User Login
+```
+username: admin
+password: admin
+```
